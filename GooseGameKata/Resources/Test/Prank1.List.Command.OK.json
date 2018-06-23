@@ -1,0 +1,17 @@
+[
+  {
+  "element": "add player pippo"
+  },
+  {
+  "element": "add player pluto"
+  },
+  {
+  "element": "move pippo 3, 1"
+  },
+  {
+  "element": "move pluto 6, 2"
+  },
+  {
+  "element": "move pippo 2, 2"
+  }
+]

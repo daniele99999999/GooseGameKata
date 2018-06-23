@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3814131B82A412C1168057 /* libPods-GooseGameKataTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D416C245DEE341C1E47B74B5 /* libPods-GooseGameKataTest.a */; };
+		3D3F56D420D1D81900FEAF8F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F56D320D1D81900FEAF8F /* main.swift */; };
+		3D4D393820D64E6200040512 /* ActionMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D393720D64E6200040512 /* ActionMove.swift */; };
+		3D4D393C20D64F4B00040512 /* ActionAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D393B20D64F4B00040512 /* ActionAdd.swift */; };
+		3D5ED8A120DCD39100C55519 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED8A020DCD39100C55519 /* Move.swift */; };
+		3D5ED8BB20DCF9D000C55519 /* CustomStringConvertible+AutoDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED8BA20DCF9CE00C55519 /* CustomStringConvertible+AutoDescription.swift */; };
+		3D5ED8BD20DCFEBB00C55519 /* StorageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED8BC20DCFEBB00C55519 /* StorageUtils.swift */; };
+		3D5ED8D120DD065B00C55519 /* GooseGameKataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED8D020DD065B00C55519 /* GooseGameKataTest.swift */; };
+		3D5ED8F720DD2C6700C55519 /* RulesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294320D5770F00EBC7C2 /* RulesManager.swift */; };
+		3D5ED8FC20DD2F9800C55519 /* Configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED8FB20DD2F9800C55519 /* Configuration.json */; };
+		3D5ED8FD20DD2FA400C55519 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB295A20D58E4400EBC7C2 /* Localizable.strings */; };
+		3D5ED8FE20DD2FAB00C55519 /* CustomStringConvertible+AutoDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED8BA20DCF9CE00C55519 /* CustomStringConvertible+AutoDescription.swift */; };
+		3D5ED8FF20DD2FAE00C55519 /* StorageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED8BC20DCFEBB00C55519 /* StorageUtils.swift */; };
+		3D5ED90020DD2FB700C55519 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294020D5770F00EBC7C2 /* CoreManager.swift */; };
+		3D5ED90120DD2FBA00C55519 /* ActionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294120D5770F00EBC7C2 /* ActionParser.swift */; };
+		3D5ED90220DD2FBD00C55519 /* ActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89320620D6C79100134A4A /* ActionManager.swift */; };
+		3D5ED90320DD2FC100C55519 /* StatusPlayersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294220D5770F00EBC7C2 /* StatusPlayersManager.swift */; };
+		3D5ED90520DD2FD100C55519 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB295320D57CAB00EBC7C2 /* Constants.swift */; };
+		3D5ED90620DD31B200C55519 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294F20D5779700EBC7C2 /* Player.swift */; };
+		3D5ED90720DD31B400C55519 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB295120D577A200EBC7C2 /* Action.swift */; };
+		3D5ED90820DD31B700C55519 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED8A020DCD39100C55519 /* Move.swift */; };
+		3D5ED90A20DD31BE00C55519 /* ActionAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D393B20D64F4B00040512 /* ActionAdd.swift */; };
+		3D5ED90B20DD31C100C55519 /* ActionMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D393720D64E6200040512 /* ActionMove.swift */; };
+		3D5ED90F20DD593D00C55519 /* CoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED90E20DD593D00C55519 /* CoreTest.swift */; };
+		3D5ED91720DDA0C300C55519 /* Help.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED91420DDA0C300C55519 /* Help.Message.json */; };
+		3D5ED91820DDA0C300C55519 /* Help.Command.KO.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED91520DDA0C300C55519 /* Help.Command.KO.json */; };
+		3D5ED91920DDA0C300C55519 /* Help.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED91620DDA0C300C55519 /* Help.Command.OK.json */; };
+		3D5ED92820DDAA7200C55519 /* Add1.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED92120DDAA7000C55519 /* Add1.Message.json */; };
+		3D5ED92920DDAA7200C55519 /* Add3.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED92220DDAA7000C55519 /* Add3.Message.json */; };
+		3D5ED92A20DDAA7200C55519 /* Add.Command.KO.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED92320DDAA7100C55519 /* Add.Command.KO.json */; };
+		3D5ED92B20DDAA7200C55519 /* Add3.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED92420DDAA7100C55519 /* Add3.Command.OK.json */; };
+		3D5ED92C20DDAA7200C55519 /* Add1.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED92520DDAA7100C55519 /* Add1.Command.OK.json */; };
+		3D5ED92D20DDAA7200C55519 /* Add2.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED92620DDAA7100C55519 /* Add2.Message.json */; };
+		3D5ED92E20DDAA7200C55519 /* Add2.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED92720DDAA7200C55519 /* Add2.Command.OK.json */; };
+		3D5ED93420DDAC9400C55519 /* Move1.Command.KO.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED93220DDAC9400C55519 /* Move1.Command.KO.json */; };
+		3D5ED93620DDB51700C55519 /* Move2.Command.KO.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED93520DDB51700C55519 /* Move2.Command.KO.json */; };
+		3D5ED93820DDB57F00C55519 /* Move3.Command.KO.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED93720DDB57F00C55519 /* Move3.Command.KO.json */; };
+		3D5ED93B20DDB6CE00C55519 /* Move1.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED93920DDB66C00C55519 /* Move1.Command.OK.json */; };
+		3D5ED93C20DDB6D100C55519 /* Move2.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED93A20DDB66C00C55519 /* Move2.Command.OK.json */; };
+		3D5ED95F20DDB7EA00C55519 /* Move1.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED95E20DDB7E900C55519 /* Move1.Message.json */; };
+		3D5ED96520DDB89E00C55519 /* Move3.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED96120DDB89D00C55519 /* Move3.Message.json */; };
+		3D5ED96620DDB89E00C55519 /* Move4.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED96220DDB89D00C55519 /* Move4.Message.json */; };
+		3D5ED96720DDB89E00C55519 /* Move2.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED96320DDB89D00C55519 /* Move2.Message.json */; };
+		3D5ED96A20DDC04C00C55519 /* Move3.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED96820DDC04B00C55519 /* Move3.Command.OK.json */; };
+		3D5ED96B20DDC04C00C55519 /* Move4.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED96920DDC04B00C55519 /* Move4.Command.OK.json */; };
+		3D5ED96F20DDC26400C55519 /* Status1.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED96C20DDC26300C55519 /* Status1.Command.OK.json */; };
+		3D5ED97020DDC26400C55519 /* Status.Command.KO.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED96D20DDC26300C55519 /* Status.Command.KO.json */; };
+		3D5ED97120DDC26400C55519 /* Status1.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED96E20DDC26300C55519 /* Status1.Message.json */; };
+		3D5ED97420DDC31500C55519 /* Status2.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED97220DDC31400C55519 /* Status2.Message.json */; };
+		3D5ED97520DDC31500C55519 /* Status2.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED97320DDC31400C55519 /* Status2.Command.OK.json */; };
+		3D5ED97920DDC55100C55519 /* Exit.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED97620DDC55000C55519 /* Exit.Message.json */; };
+		3D5ED97A20DDC55100C55519 /* Exit.Command.KO.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED97720DDC55000C55519 /* Exit.Command.KO.json */; };
+		3D5ED97B20DDC55100C55519 /* Exit.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED97820DDC55100C55519 /* Exit.Command.OK.json */; };
+		3D5ED97D20DE286D00C55519 /* ActionHelpStatusExit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED97C20DE286A00C55519 /* ActionHelpStatusExit.swift */; };
+		3D5ED97E20DE286D00C55519 /* ActionHelpStatusExit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED97C20DE286A00C55519 /* ActionHelpStatusExit.swift */; };
+		3D5ED98220DE332A00C55519 /* ElementStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ED98120DE332A00C55519 /* ElementStringTest.swift */; };
+		3D5ED98820DE408D00C55519 /* Bridge1.List.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED98720DE408C00C55519 /* Bridge1.List.Command.OK.json */; };
+		3D5ED98A20DE434A00C55519 /* Bridge1.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED98920DE434A00C55519 /* Bridge1.Message.json */; };
+		3D5ED98F20DE570400C55519 /* Goose1.List.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED98B20DE570200C55519 /* Goose1.List.Command.OK.json */; };
+		3D5ED99020DE570400C55519 /* Goose2.List.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED98C20DE570200C55519 /* Goose2.List.Command.OK.json */; };
+		3D5ED99120DE570400C55519 /* Goose2.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED98D20DE570300C55519 /* Goose2.Message.json */; };
+		3D5ED99220DE570400C55519 /* Goose1.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED98E20DE570300C55519 /* Goose1.Message.json */; };
+		3D5ED99720DE571C00C55519 /* Win1.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED99320DE571A00C55519 /* Win1.Message.json */; };
+		3D5ED99820DE571C00C55519 /* Prank1.List.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED99420DE571B00C55519 /* Prank1.List.Command.OK.json */; };
+		3D5ED99920DE571C00C55519 /* Prank1.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED99520DE571B00C55519 /* Prank1.Message.json */; };
+		3D5ED99A20DE571C00C55519 /* Win1.List.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED99620DE571B00C55519 /* Win1.List.Command.OK.json */; };
+		3D5ED9A720DE714400C55519 /* ConfigurationNoSpecial.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED9A620DE714300C55519 /* ConfigurationNoSpecial.json */; };
+		3D89320720D6C79200134A4A /* ActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89320620D6C79100134A4A /* ActionManager.swift */; };
+		3DBABEC020DE954B008208C9 /* Win2.List.Command.OK.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DBABEBE20DE9511008208C9 /* Win2.List.Command.OK.json */; };
+		3DBABEC120DE954E008208C9 /* Win2.Message.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DBABEBF20DE9511008208C9 /* Win2.Message.json */; };
+		3DBB294520D5770F00EBC7C2 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294020D5770F00EBC7C2 /* CoreManager.swift */; };
+		3DBB294620D5770F00EBC7C2 /* ActionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294120D5770F00EBC7C2 /* ActionParser.swift */; };
+		3DBB294720D5770F00EBC7C2 /* StatusPlayersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294220D5770F00EBC7C2 /* StatusPlayersManager.swift */; };
+		3DBB294820D5770F00EBC7C2 /* RulesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294320D5770F00EBC7C2 /* RulesManager.swift */; };
+		3DBB295020D5779700EBC7C2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB294F20D5779700EBC7C2 /* Player.swift */; };
+		3DBB295220D577A200EBC7C2 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB295120D577A200EBC7C2 /* Action.swift */; };
+		3DBB295420D57CAB00EBC7C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB295320D57CAB00EBC7C2 /* Constants.swift */; };
+		56744613DB5858F700166489 /* libPods-GooseGameKata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EC57027F558C3D4C45EA80 /* libPods-GooseGameKata.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D3F56CE20D1D81900FEAF8F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37EC57027F558C3D4C45EA80 /* libPods-GooseGameKata.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooseGameKata.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3F56D020D1D81900FEAF8F /* GooseGameKata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GooseGameKata; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3F56D320D1D81900FEAF8F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3D4D393620D5CD5100040512 /* GooseGameKata-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GooseGameKata-info.plist"; sourceTree = "<group>"; };
+		3D4D393720D64E6200040512 /* ActionMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionMove.swift; sourceTree = "<group>"; };
+		3D4D393B20D64F4B00040512 /* ActionAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionAdd.swift; sourceTree = "<group>"; };
+		3D5ED8A020DCD39100C55519 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		3D5ED8BA20DCF9CE00C55519 /* CustomStringConvertible+AutoDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomStringConvertible+AutoDescription.swift"; sourceTree = "<group>"; };
+		3D5ED8BC20DCFEBB00C55519 /* StorageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageUtils.swift; sourceTree = "<group>"; };
+		3D5ED8CE20DD065A00C55519 /* GooseGameKataTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooseGameKataTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5ED8D020DD065B00C55519 /* GooseGameKataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooseGameKataTest.swift; sourceTree = "<group>"; };
+		3D5ED8D220DD065B00C55519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5ED8FB20DD2F9800C55519 /* Configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Configuration.json; sourceTree = "<group>"; };
+		3D5ED90E20DD593D00C55519 /* CoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTest.swift; sourceTree = "<group>"; };
+		3D5ED91420DDA0C300C55519 /* Help.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Help.Message.json; sourceTree = "<group>"; };
+		3D5ED91520DDA0C300C55519 /* Help.Command.KO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Help.Command.KO.json; sourceTree = "<group>"; };
+		3D5ED91620DDA0C300C55519 /* Help.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Help.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED92120DDAA7000C55519 /* Add1.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Add1.Message.json; sourceTree = "<group>"; };
+		3D5ED92220DDAA7000C55519 /* Add3.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Add3.Message.json; sourceTree = "<group>"; };
+		3D5ED92320DDAA7100C55519 /* Add.Command.KO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Add.Command.KO.json; sourceTree = "<group>"; };
+		3D5ED92420DDAA7100C55519 /* Add3.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Add3.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED92520DDAA7100C55519 /* Add1.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Add1.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED92620DDAA7100C55519 /* Add2.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Add2.Message.json; sourceTree = "<group>"; };
+		3D5ED92720DDAA7200C55519 /* Add2.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Add2.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED93220DDAC9400C55519 /* Move1.Command.KO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move1.Command.KO.json; sourceTree = "<group>"; };
+		3D5ED93520DDB51700C55519 /* Move2.Command.KO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move2.Command.KO.json; sourceTree = "<group>"; };
+		3D5ED93720DDB57F00C55519 /* Move3.Command.KO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move3.Command.KO.json; sourceTree = "<group>"; };
+		3D5ED93920DDB66C00C55519 /* Move1.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move1.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED93A20DDB66C00C55519 /* Move2.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move2.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED95E20DDB7E900C55519 /* Move1.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move1.Message.json; sourceTree = "<group>"; };
+		3D5ED96120DDB89D00C55519 /* Move3.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move3.Message.json; sourceTree = "<group>"; };
+		3D5ED96220DDB89D00C55519 /* Move4.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move4.Message.json; sourceTree = "<group>"; };
+		3D5ED96320DDB89D00C55519 /* Move2.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move2.Message.json; sourceTree = "<group>"; };
+		3D5ED96820DDC04B00C55519 /* Move3.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move3.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED96920DDC04B00C55519 /* Move4.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Move4.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED96C20DDC26300C55519 /* Status1.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Status1.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED96D20DDC26300C55519 /* Status.Command.KO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Status.Command.KO.json; sourceTree = "<group>"; };
+		3D5ED96E20DDC26300C55519 /* Status1.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Status1.Message.json; sourceTree = "<group>"; };
+		3D5ED97220DDC31400C55519 /* Status2.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Status2.Message.json; sourceTree = "<group>"; };
+		3D5ED97320DDC31400C55519 /* Status2.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Status2.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED97620DDC55000C55519 /* Exit.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Exit.Message.json; sourceTree = "<group>"; };
+		3D5ED97720DDC55000C55519 /* Exit.Command.KO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Exit.Command.KO.json; sourceTree = "<group>"; };
+		3D5ED97820DDC55100C55519 /* Exit.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Exit.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED97C20DE286A00C55519 /* ActionHelpStatusExit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionHelpStatusExit.swift; sourceTree = "<group>"; };
+		3D5ED98120DE332A00C55519 /* ElementStringTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementStringTest.swift; sourceTree = "<group>"; };
+		3D5ED98720DE408C00C55519 /* Bridge1.List.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bridge1.List.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED98920DE434A00C55519 /* Bridge1.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bridge1.Message.json; sourceTree = "<group>"; };
+		3D5ED98B20DE570200C55519 /* Goose1.List.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Goose1.List.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED98C20DE570200C55519 /* Goose2.List.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Goose2.List.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED98D20DE570300C55519 /* Goose2.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Goose2.Message.json; sourceTree = "<group>"; };
+		3D5ED98E20DE570300C55519 /* Goose1.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Goose1.Message.json; sourceTree = "<group>"; };
+		3D5ED99320DE571A00C55519 /* Win1.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Win1.Message.json; sourceTree = "<group>"; };
+		3D5ED99420DE571B00C55519 /* Prank1.List.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Prank1.List.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED99520DE571B00C55519 /* Prank1.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Prank1.Message.json; sourceTree = "<group>"; };
+		3D5ED99620DE571B00C55519 /* Win1.List.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Win1.List.Command.OK.json; sourceTree = "<group>"; };
+		3D5ED9A620DE714300C55519 /* ConfigurationNoSpecial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ConfigurationNoSpecial.json; sourceTree = "<group>"; };
+		3D89320620D6C79100134A4A /* ActionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionManager.swift; sourceTree = "<group>"; };
+		3DBABEBE20DE9511008208C9 /* Win2.List.Command.OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Win2.List.Command.OK.json; sourceTree = "<group>"; };
+		3DBABEBF20DE9511008208C9 /* Win2.Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Win2.Message.json; sourceTree = "<group>"; };
+		3DBB294020D5770F00EBC7C2 /* CoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
+		3DBB294120D5770F00EBC7C2 /* ActionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionParser.swift; sourceTree = "<group>"; };
+		3DBB294220D5770F00EBC7C2 /* StatusPlayersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPlayersManager.swift; sourceTree = "<group>"; };
+		3DBB294320D5770F00EBC7C2 /* RulesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesManager.swift; sourceTree = "<group>"; };
+		3DBB294F20D5779700EBC7C2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3DBB295120D577A200EBC7C2 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		3DBB295320D57CAB00EBC7C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3DBB295920D58E4400EBC7C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DBB295B20D58E5000EBC7C2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6B7E4A369D27C6AA9A89B785 /* Pods-GooseGameKata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooseGameKata.release.xcconfig"; path = "Pods/Target Support Files/Pods-GooseGameKata/Pods-GooseGameKata.release.xcconfig"; sourceTree = "<group>"; };
+		8076C827A28A00FE072875DF /* Pods-GooseGameKata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooseGameKata.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooseGameKata/Pods-GooseGameKata.debug.xcconfig"; sourceTree = "<group>"; };
+		92B22FE7DC9C3EDF4E6536B0 /* Pods-GooseGameKataTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooseGameKataTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GooseGameKataTest/Pods-GooseGameKataTest.release.xcconfig"; sourceTree = "<group>"; };
+		D416C245DEE341C1E47B74B5 /* libPods-GooseGameKataTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooseGameKataTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4EE09BC8CC9B47825BCD13 /* Pods-GooseGameKataTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooseGameKataTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooseGameKataTest/Pods-GooseGameKataTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D3F56CD20D1D81900FEAF8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56744613DB5858F700166489 /* libPods-GooseGameKata.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5ED8CB20DD065A00C55519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3814131B82A412C1168057 /* libPods-GooseGameKataTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D3F56C720D1D81900FEAF8F = {
+			isa = PBXGroup;
+			children = (
+				3D3F56D220D1D81900FEAF8F /* GooseGameKata */,
+				3D5ED8CF20DD065B00C55519 /* GooseGameKataTest */,
+				3D3F56D120D1D81900FEAF8F /* Products */,
+				EA7E833B9F126E3A6DDD570B /* Pods */,
+				890129CD9A80150BB477E0B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D3F56D120D1D81900FEAF8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F56D020D1D81900FEAF8F /* GooseGameKata */,
+				3D5ED8CE20DD065A00C55519 /* GooseGameKataTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D3F56D220D1D81900FEAF8F /* GooseGameKata */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB295720D58D8100EBC7C2 /* Resources */,
+				3DBB295520D5846A00EBC7C2 /* Utils */,
+				3DBB293E20D5770F00EBC7C2 /* Manager */,
+				3DBB293D20D576DF00EBC7C2 /* Model */,
+				3D3F56D320D1D81900FEAF8F /* main.swift */,
+				3DBB295320D57CAB00EBC7C2 /* Constants.swift */,
+			);
+			path = GooseGameKata;
+			sourceTree = "<group>";
+		};
+		3D5ED8CF20DD065B00C55519 /* GooseGameKataTest */ = {
+			isa = PBXGroup;
+			children = (
+				3D5ED8D020DD065B00C55519 /* GooseGameKataTest.swift */,
+				3D5ED90E20DD593D00C55519 /* CoreTest.swift */,
+				3D5ED98120DE332A00C55519 /* ElementStringTest.swift */,
+				3D5ED8D220DD065B00C55519 /* Info.plist */,
+			);
+			path = GooseGameKataTest;
+			sourceTree = "<group>";
+		};
+		3D5ED8D620DD25A900C55519 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				3D5ED9A620DE714300C55519 /* ConfigurationNoSpecial.json */,
+				3D5ED91520DDA0C300C55519 /* Help.Command.KO.json */,
+				3D5ED91620DDA0C300C55519 /* Help.Command.OK.json */,
+				3D5ED91420DDA0C300C55519 /* Help.Message.json */,
+				3D5ED92320DDAA7100C55519 /* Add.Command.KO.json */,
+				3D5ED92520DDAA7100C55519 /* Add1.Command.OK.json */,
+				3D5ED92720DDAA7200C55519 /* Add2.Command.OK.json */,
+				3D5ED92420DDAA7100C55519 /* Add3.Command.OK.json */,
+				3D5ED92120DDAA7000C55519 /* Add1.Message.json */,
+				3D5ED92620DDAA7100C55519 /* Add2.Message.json */,
+				3D5ED92220DDAA7000C55519 /* Add3.Message.json */,
+				3D5ED93220DDAC9400C55519 /* Move1.Command.KO.json */,
+				3D5ED93520DDB51700C55519 /* Move2.Command.KO.json */,
+				3D5ED93720DDB57F00C55519 /* Move3.Command.KO.json */,
+				3D5ED93920DDB66C00C55519 /* Move1.Command.OK.json */,
+				3D5ED93A20DDB66C00C55519 /* Move2.Command.OK.json */,
+				3D5ED96820DDC04B00C55519 /* Move3.Command.OK.json */,
+				3D5ED96920DDC04B00C55519 /* Move4.Command.OK.json */,
+				3D5ED95E20DDB7E900C55519 /* Move1.Message.json */,
+				3D5ED96320DDB89D00C55519 /* Move2.Message.json */,
+				3D5ED96120DDB89D00C55519 /* Move3.Message.json */,
+				3D5ED96220DDB89D00C55519 /* Move4.Message.json */,
+				3D5ED96D20DDC26300C55519 /* Status.Command.KO.json */,
+				3D5ED96C20DDC26300C55519 /* Status1.Command.OK.json */,
+				3D5ED96E20DDC26300C55519 /* Status1.Message.json */,
+				3D5ED97320DDC31400C55519 /* Status2.Command.OK.json */,
+				3D5ED97220DDC31400C55519 /* Status2.Message.json */,
+				3D5ED97720DDC55000C55519 /* Exit.Command.KO.json */,
+				3D5ED97820DDC55100C55519 /* Exit.Command.OK.json */,
+				3D5ED97620DDC55000C55519 /* Exit.Message.json */,
+				3D5ED98720DE408C00C55519 /* Bridge1.List.Command.OK.json */,
+				3D5ED98920DE434A00C55519 /* Bridge1.Message.json */,
+				3D5ED98B20DE570200C55519 /* Goose1.List.Command.OK.json */,
+				3D5ED98E20DE570300C55519 /* Goose1.Message.json */,
+				3D5ED98C20DE570200C55519 /* Goose2.List.Command.OK.json */,
+				3D5ED98D20DE570300C55519 /* Goose2.Message.json */,
+				3D5ED99420DE571B00C55519 /* Prank1.List.Command.OK.json */,
+				3D5ED99520DE571B00C55519 /* Prank1.Message.json */,
+				3D5ED99620DE571B00C55519 /* Win1.List.Command.OK.json */,
+				3D5ED99320DE571A00C55519 /* Win1.Message.json */,
+				3DBABEBE20DE9511008208C9 /* Win2.List.Command.OK.json */,
+				3DBABEBF20DE9511008208C9 /* Win2.Message.json */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		3D5ED8D720DD25A900C55519 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3D5ED8FB20DD2F9800C55519 /* Configuration.json */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3DBB293D20D576DF00EBC7C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB294F20D5779700EBC7C2 /* Player.swift */,
+				3DBB295120D577A200EBC7C2 /* Action.swift */,
+				3D5ED8A020DCD39100C55519 /* Move.swift */,
+				3D5ED97C20DE286A00C55519 /* ActionHelpStatusExit.swift */,
+				3D4D393B20D64F4B00040512 /* ActionAdd.swift */,
+				3D4D393720D64E6200040512 /* ActionMove.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DBB293E20D5770F00EBC7C2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB294020D5770F00EBC7C2 /* CoreManager.swift */,
+				3DBB294120D5770F00EBC7C2 /* ActionParser.swift */,
+				3D89320620D6C79100134A4A /* ActionManager.swift */,
+				3DBB294220D5770F00EBC7C2 /* StatusPlayersManager.swift */,
+				3DBB294320D5770F00EBC7C2 /* RulesManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3DBB295520D5846A00EBC7C2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3DBB295620D5846A00EBC7C2 /* Extensions */,
+				3D5ED8BC20DCFEBB00C55519 /* StorageUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3DBB295620D5846A00EBC7C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D5ED8BA20DCF9CE00C55519 /* CustomStringConvertible+AutoDescription.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3DBB295720D58D8100EBC7C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D5ED8D720DD25A900C55519 /* Configuration */,
+				3D5ED8D620DD25A900C55519 /* Test */,
+				3D4D393620D5CD5100040512 /* GooseGameKata-info.plist */,
+				3DBB295A20D58E4400EBC7C2 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		890129CD9A80150BB477E0B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37EC57027F558C3D4C45EA80 /* libPods-GooseGameKata.a */,
+				D416C245DEE341C1E47B74B5 /* libPods-GooseGameKataTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA7E833B9F126E3A6DDD570B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8076C827A28A00FE072875DF /* Pods-GooseGameKata.debug.xcconfig */,
+				6B7E4A369D27C6AA9A89B785 /* Pods-GooseGameKata.release.xcconfig */,
+				FB4EE09BC8CC9B47825BCD13 /* Pods-GooseGameKataTest.debug.xcconfig */,
+				92B22FE7DC9C3EDF4E6536B0 /* Pods-GooseGameKataTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D3F56CF20D1D81900FEAF8F /* GooseGameKata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3F56D720D1D81900FEAF8F /* Build configuration list for PBXNativeTarget "GooseGameKata" */;
+			buildPhases = (
+				01E546ED8FBF6DBA18D8DE2D /* [CP] Check Pods Manifest.lock */,
+				3D3F56CC20D1D81900FEAF8F /* Sources */,
+				3D3F56CD20D1D81900FEAF8F /* Frameworks */,
+				3D3F56CE20D1D81900FEAF8F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooseGameKata;
+			productName = GooseGameKata;
+			productReference = 3D3F56D020D1D81900FEAF8F /* GooseGameKata */;
+			productType = "com.apple.product-type.tool";
+		};
+		3D5ED8CD20DD065A00C55519 /* GooseGameKataTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5ED8D320DD065B00C55519 /* Build configuration list for PBXNativeTarget "GooseGameKataTest" */;
+			buildPhases = (
+				6277B44A99DBAF591389B7A0 /* [CP] Check Pods Manifest.lock */,
+				3D5ED8CA20DD065A00C55519 /* Sources */,
+				3D5ED8CB20DD065A00C55519 /* Frameworks */,
+				3D5ED8CC20DD065A00C55519 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooseGameKataTest;
+			productName = GooseGameKataTest;
+			productReference = 3D5ED8CE20DD065A00C55519 /* GooseGameKataTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D3F56C820D1D81900FEAF8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Daniele Salvioni";
+				TargetAttributes = {
+					3D3F56CF20D1D81900FEAF8F = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					3D5ED8CD20DD065A00C55519 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 3D3F56CB20D1D81900FEAF8F /* Build configuration list for PBXProject "GooseGameKata" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				it,
+			);
+			mainGroup = 3D3F56C720D1D81900FEAF8F;
+			productRefGroup = 3D3F56D120D1D81900FEAF8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D3F56CF20D1D81900FEAF8F /* GooseGameKata */,
+				3D5ED8CD20DD065A00C55519 /* GooseGameKataTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D5ED8CC20DD065A00C55519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5ED97920DDC55100C55519 /* Exit.Message.json in Resources */,
+				3D5ED99120DE570400C55519 /* Goose2.Message.json in Resources */,
+				3D5ED93620DDB51700C55519 /* Move2.Command.KO.json in Resources */,
+				3D5ED93C20DDB6D100C55519 /* Move2.Command.OK.json in Resources */,
+				3DBABEC120DE954E008208C9 /* Win2.Message.json in Resources */,
+				3D5ED92D20DDAA7200C55519 /* Add2.Message.json in Resources */,
+				3D5ED99220DE570400C55519 /* Goose1.Message.json in Resources */,
+				3D5ED96620DDB89E00C55519 /* Move4.Message.json in Resources */,
+				3D5ED97A20DDC55100C55519 /* Exit.Command.KO.json in Resources */,
+				3D5ED9A720DE714400C55519 /* ConfigurationNoSpecial.json in Resources */,
+				3D5ED96B20DDC04C00C55519 /* Move4.Command.OK.json in Resources */,
+				3D5ED8FC20DD2F9800C55519 /* Configuration.json in Resources */,
+				3D5ED92A20DDAA7200C55519 /* Add.Command.KO.json in Resources */,
+				3DBABEC020DE954B008208C9 /* Win2.List.Command.OK.json in Resources */,
+				3D5ED99920DE571C00C55519 /* Prank1.Message.json in Resources */,
+				3D5ED99A20DE571C00C55519 /* Win1.List.Command.OK.json in Resources */,
+				3D5ED96F20DDC26400C55519 /* Status1.Command.OK.json in Resources */,
+				3D5ED91720DDA0C300C55519 /* Help.Message.json in Resources */,
+				3D5ED98A20DE434A00C55519 /* Bridge1.Message.json in Resources */,
+				3D5ED93420DDAC9400C55519 /* Move1.Command.KO.json in Resources */,
+				3D5ED97520DDC31500C55519 /* Status2.Command.OK.json in Resources */,
+				3D5ED92E20DDAA7200C55519 /* Add2.Command.OK.json in Resources */,
+				3D5ED97420DDC31500C55519 /* Status2.Message.json in Resources */,
+				3D5ED98820DE408D00C55519 /* Bridge1.List.Command.OK.json in Resources */,
+				3D5ED99820DE571C00C55519 /* Prank1.List.Command.OK.json in Resources */,
+				3D5ED96720DDB89E00C55519 /* Move2.Message.json in Resources */,
+				3D5ED92920DDAA7200C55519 /* Add3.Message.json in Resources */,
+				3D5ED91820DDA0C300C55519 /* Help.Command.KO.json in Resources */,
+				3D5ED96A20DDC04C00C55519 /* Move3.Command.OK.json in Resources */,
+				3D5ED96520DDB89E00C55519 /* Move3.Message.json in Resources */,
+				3D5ED97120DDC26400C55519 /* Status1.Message.json in Resources */,
+				3D5ED99020DE570400C55519 /* Goose2.List.Command.OK.json in Resources */,
+				3D5ED8FD20DD2FA400C55519 /* Localizable.strings in Resources */,
+				3D5ED93B20DDB6CE00C55519 /* Move1.Command.OK.json in Resources */,
+				3D5ED92B20DDAA7200C55519 /* Add3.Command.OK.json in Resources */,
+				3D5ED93820DDB57F00C55519 /* Move3.Command.KO.json in Resources */,
+				3D5ED92820DDAA7200C55519 /* Add1.Message.json in Resources */,
+				3D5ED95F20DDB7EA00C55519 /* Move1.Message.json in Resources */,
+				3D5ED91920DDA0C300C55519 /* Help.Command.OK.json in Resources */,
+				3D5ED98F20DE570400C55519 /* Goose1.List.Command.OK.json in Resources */,
+				3D5ED92C20DDAA7200C55519 /* Add1.Command.OK.json in Resources */,
+				3D5ED97020DDC26400C55519 /* Status.Command.KO.json in Resources */,
+				3D5ED97B20DDC55100C55519 /* Exit.Command.OK.json in Resources */,
+				3D5ED99720DE571C00C55519 /* Win1.Message.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01E546ED8FBF6DBA18D8DE2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooseGameKata-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6277B44A99DBAF591389B7A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooseGameKataTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D3F56CC20D1D81900FEAF8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5ED97D20DE286D00C55519 /* ActionHelpStatusExit.swift in Sources */,
+				3DBB295220D577A200EBC7C2 /* Action.swift in Sources */,
+				3DBB294520D5770F00EBC7C2 /* CoreManager.swift in Sources */,
+				3DBB294720D5770F00EBC7C2 /* StatusPlayersManager.swift in Sources */,
+				3D3F56D420D1D81900FEAF8F /* main.swift in Sources */,
+				3D4D393C20D64F4B00040512 /* ActionAdd.swift in Sources */,
+				3DBB295020D5779700EBC7C2 /* Player.swift in Sources */,
+				3DBB294620D5770F00EBC7C2 /* ActionParser.swift in Sources */,
+				3D5ED8BD20DCFEBB00C55519 /* StorageUtils.swift in Sources */,
+				3D89320720D6C79200134A4A /* ActionManager.swift in Sources */,
+				3D5ED8A120DCD39100C55519 /* Move.swift in Sources */,
+				3DBB294820D5770F00EBC7C2 /* RulesManager.swift in Sources */,
+				3D4D393820D64E6200040512 /* ActionMove.swift in Sources */,
+				3DBB295420D57CAB00EBC7C2 /* Constants.swift in Sources */,
+				3D5ED8BB20DCF9D000C55519 /* CustomStringConvertible+AutoDescription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5ED8CA20DD065A00C55519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5ED8D120DD065B00C55519 /* GooseGameKataTest.swift in Sources */,
+				3D5ED90A20DD31BE00C55519 /* ActionAdd.swift in Sources */,
+				3D5ED98220DE332A00C55519 /* ElementStringTest.swift in Sources */,
+				3D5ED90720DD31B400C55519 /* Action.swift in Sources */,
+				3D5ED90B20DD31C100C55519 /* ActionMove.swift in Sources */,
+				3D5ED8FE20DD2FAB00C55519 /* CustomStringConvertible+AutoDescription.swift in Sources */,
+				3D5ED97E20DE286D00C55519 /* ActionHelpStatusExit.swift in Sources */,
+				3D5ED90220DD2FBD00C55519 /* ActionManager.swift in Sources */,
+				3D5ED90820DD31B700C55519 /* Move.swift in Sources */,
+				3D5ED90F20DD593D00C55519 /* CoreTest.swift in Sources */,
+				3D5ED90120DD2FBA00C55519 /* ActionParser.swift in Sources */,
+				3D5ED90520DD2FD100C55519 /* Constants.swift in Sources */,
+				3D5ED90320DD2FC100C55519 /* StatusPlayersManager.swift in Sources */,
+				3D5ED8F720DD2C6700C55519 /* RulesManager.swift in Sources */,
+				3D5ED8FF20DD2FAE00C55519 /* StorageUtils.swift in Sources */,
+				3D5ED90620DD31B200C55519 /* Player.swift in Sources */,
+				3D5ED90020DD2FB700C55519 /* CoreManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DBB295A20D58E4400EBC7C2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBB295920D58E4400EBC7C2 /* en */,
+				3DBB295B20D58E5000EBC7C2 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D3F56D520D1D81900FEAF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D3F56D620D1D81900FEAF8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3D3F56D820D1D81900FEAF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8076C827A28A00FE072875DF /* Pods-GooseGameKata.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GooseGameKata/Resources/GooseGameKata-info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = it.kata.GooseGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3D3F56D920D1D81900FEAF8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7E4A369D27C6AA9A89B785 /* Pods-GooseGameKata.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GooseGameKata/Resources/GooseGameKata-info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = it.kata.GooseGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3D5ED8D420DD065B00C55519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4EE09BC8CC9B47825BCD13 /* Pods-GooseGameKataTest.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GooseGameKataTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = it.Kata.GooseGameKataTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3D5ED8D520DD065B00C55519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B22FE7DC9C3EDF4E6536B0 /* Pods-GooseGameKataTest.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GooseGameKataTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = it.Kata.GooseGameKataTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D3F56CB20D1D81900FEAF8F /* Build configuration list for PBXProject "GooseGameKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3F56D520D1D81900FEAF8F /* Debug */,
+				3D3F56D620D1D81900FEAF8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D3F56D720D1D81900FEAF8F /* Build configuration list for PBXNativeTarget "GooseGameKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3F56D820D1D81900FEAF8F /* Debug */,
+				3D3F56D920D1D81900FEAF8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5ED8D320DD065B00C55519 /* Build configuration list for PBXNativeTarget "GooseGameKataTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5ED8D420DD065B00C55519 /* Debug */,
+				3D5ED8D520DD065B00C55519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D3F56C820D1D81900FEAF8F /* Project object */;
+}

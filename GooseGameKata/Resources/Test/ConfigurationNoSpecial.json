@@ -1,0 +1,8 @@
+{
+	"GooseCells" : [],
+	"BridgeCells" : [],
+	"MultiplePlayerCells" : [0],
+	"GoalCell" : 63,
+	"MinNumberOfPlayers" : 2,
+	"Prank" : true
+}
